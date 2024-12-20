@@ -1,0 +1,6 @@
+{
+  "http://purl.org/ontology/breast_cancer_recommendation#ACS_chest_radiotherapy_young_age": "http://purl.org/ontology/breast_cancer_recommendation#ACS_chest_radiotherapy_young_age_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#ACS_history_breast_cancer": "http://purl.org/ontology/breast_cancer_recommendation#ACS_history_breast_cancer_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#ACS_genetic_mutation_question": "http://purl.org/ontology/breast_cancer_recommendation#ACS_genetic_mutation_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#ACS_age_question": "70"
+}

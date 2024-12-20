@@ -1,0 +1,72 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.5'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'uy.com.fing'
+version = '5.2'
+
+java {
+	sourceCompatibility = '17'
+}
+
+apply plugin: 'maven-publish'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+publishing {
+	publications {
+		customLibrary(MavenPublication) {
+			from components.java
+		}
+	}
+
+	repositories {
+		maven {
+			name = 'sampleRepo'
+			url = layout.buildDirectory.dir("repo")
+		}
+	}
+}
+
+dependencies {
+	//Framework: Spring
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	//TODO está la 5.0.0 pero no es compatible con openllet-jena.
+	implementation 'org.apache.jena:apache-jena-libs:4.9.0'
+	implementation 'com.github.galigator.openllet:openllet-jena:2.6.5'
+
+	implementation 'ch.qos.logback:logback-core:1.4.14'
+	implementation 'ch.qos.logback:logback-classic:1.4.12'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.4'
+
+	//28-Ago-24 https://github.com/SeleniumHQ/selenium/blob/trunk/java/CHANGELOG
+	implementation 'org.seleniumhq.selenium:selenium-java:4.24.0'
+	// https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+	implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
+
+	//Annotation processors and lombok.
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	testAnnotationProcessor 'org.projectlombok:lombok'
+	testCompileOnly 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

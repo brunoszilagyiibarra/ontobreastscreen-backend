@@ -1,0 +1,3009 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/breast_cancer_ontology#"
+     xml:base="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/breast_cancer_ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Thesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+     xmlns:breast_cancer_recommendation="http://purl.org/ontology/breast_cancer_recommendation#"
+     xmlns:mammography_screening_recommendation="http://www.semanticweb.org/udelar_ing_ont/ontologies/2022/10/mammography_screening_recommendation#"
+     xmlns:mammography_screening_recommendation1="http://purl.org/ontology/mammography_screening_recommendation#">
+    <owl:Ontology rdf:about="http://purl.org/ontology/breast_cancer_recommendation">
+        <dc:creator xml:lang="en">Cindy Acuña</dc:creator>
+        <dc:creator xml:lang="en">Edelweis Rohrer</dc:creator>
+        <dc:creator xml:lang="en">Regina Motz</dc:creator>
+        <dc:creator xml:lang="en">Yasmine Anchén</dc:creator>
+        <dc:description xml:lang="en">This ontology representes the knowledge about existing recommendations of different guidelines elaborated to prevent breast cancer. Guidelines focus on women with intermediate or high risk of contracting breas cancer.
+The ontology also models results of applying different models to determine iof a given woman has an intermediate or a high risk of contracting the disease. Ie also represents risk factors that models consider to classify a woman into a risk level.</dc:description>
+        <dc:rights>https://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+        <dc:title>Breast cancer recommendation</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A23 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A23"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A26 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A26"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A29 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A29"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A32 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A32"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A34 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A34"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A36 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A36"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A39 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A39"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A8 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#A8"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#NHC0 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#NHC0"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P106"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P107 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P107"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P108 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P108"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P207 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P207"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P322"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P366 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P366"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P375"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P378"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P383"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P384"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P385 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P385"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P386 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P386"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P393"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P394"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P395 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P395"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P396"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P98 -->
+
+    <owl:AnnotationProperty rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P98"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#order -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#order"/>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#riskFactor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#riskFactor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#forInterval -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#forInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:label>forInterval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Guideline"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk_level"/>
+        <rdfs:label>forRiskLevel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#gives -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#gives">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Guideline"/>
+        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <rdfs:label>gives</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <rdfs:label>hasAge</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasAgeHigh -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAgeHigh">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAge"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <rdfs:label>hasAgeHigh</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasAgeMedium -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAgeMedium">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAge"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <rdfs:label>hasAgeMedium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasAnswer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAnswer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasBreastDiseaseValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasBreastDiseaseValue">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Breast_disease_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasFamilyHistory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasFamilyHistory">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Family_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasFirstChildBirthAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasFirstChildBirthAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasGeneticValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasGeneticValue">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasHeight -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasHeight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Height"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasHistory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasHistory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <rdfs:comment>This property suggests that the woman has the personal background to which she is associated.</rdfs:comment>
+        <rdfs:label>hasHistory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasHormonalValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasHormonalValue">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasImaging -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasImaging">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Imaging"/>
+        <rdfs:label>hasImaging</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk_level"/>
+        <rdfs:label>hasLevel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasMenarcheAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasMenarcheAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasModelQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasModelQuestion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <rdfs:label>hasModelQuestion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasMotherAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasMotherAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Family_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasMotherBreastCancerAge -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasMotherBreastCancerAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Family_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasOvarianDiseaseValue -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasOvarianDiseaseValue">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Ovarian_disease_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasPeriodicity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasPeriodicity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Periodicity"/>
+        <rdfs:comment>This property relates the recommendation to the frequency of mammography.</rdfs:comment>
+        <rdfs:label>hasPeriodicity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasPersonalHistory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasPersonalHistory">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Personal_history"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRace -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRange -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRange">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:label>hasRange</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRecStrength -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRecStrength">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength"/>
+        <rdfs:label>hasRecStrength</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRecommendationHigh -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRecommendationHigh">
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#gives"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAgeHigh"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRange"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalOfHigh"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label>hasRecommendationHigh</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRecommendationMedium -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRecommendationMedium">
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#gives"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasAgeMedium"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRange"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalOfMedium"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label>hasRecommendationMedium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasRisk -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasRisk">
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <rdfs:label>hasRisk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hasWeight -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hasWeight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#intervalOfHigh -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalOfHigh">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forInterval"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#gives"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>intervalOfHigh</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#intervalOfMedium -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalOfMedium">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forInterval"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#gives"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#forRiskLevel"/>
+                                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>intervalOfMedium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#predicts -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#predicts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <rdfs:label>predicts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#answerText -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#answerText">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#height -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#height">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Height"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#intervalMax -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#intervalMin -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#intervalMin">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#numberOfBiopsies -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#numberOfBiopsies">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Breast_disease_history"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Ovarian_disease_history"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#numberOfChilds -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#numberOfChilds">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#numberRecentYearsWithoutHormonalTherapy -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#numberRecentYearsWithoutHormonalTherapy">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#questionText -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#questionText">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#weight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Weight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#yearsNumberAnticonceptive -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/breast_cancer_recommendation#yearsNumberAnticonceptive">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284">
+        <Thesaurus:NHC0>C14284</Thesaurus:NHC0>
+        <Thesaurus:P106>Population Group</Thesaurus:P106>
+        <Thesaurus:P108>Woman</Thesaurus:P108>
+        <Thesaurus:P207>C0043210</Thesaurus:P207>
+        <Thesaurus:P366>Woman</Thesaurus:P366>
+        <Thesaurus:P90>Human, Female</Thesaurus:P90>
+        <Thesaurus:P90>Woman</Thesaurus:P90>
+        <Thesaurus:P97>An adult, female human.</Thesaurus:P97>
+        <rdfs:label>Woman</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Human, Female</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Woman</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+        <owl:annotatedTarget>An adult, female human.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI</Thesaurus:P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Imaging"/>
+        <owl:disjointWith rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C116977"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C118169"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61410"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C66830"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C85492"/>
+        <Thesaurus:NHC0>C16818</Thesaurus:NHC0>
+        <Thesaurus:P106>Diagnostic Procedure</Thesaurus:P106>
+        <Thesaurus:P107>Mammography</Thesaurus:P107>
+        <Thesaurus:P108>Mammography</Thesaurus:P108>
+        <Thesaurus:P207>C0024671</Thesaurus:P207>
+        <Thesaurus:P322>CDISC</Thesaurus:P322>
+        <Thesaurus:P322>CTRP</Thesaurus:P322>
+        <Thesaurus:P325>A type of radiography used specifically to examine breast tissue. The procedure utilizes a low-dose of x-rays or radiation to generate an image.</Thesaurus:P325>
+        <Thesaurus:P325>The use of film or a computer to create a picture of the breast.</Thesaurus:P325>
+        <Thesaurus:P366>Mammography</Thesaurus:P366>
+        <Thesaurus:P90>MAMMOGRAPHY</Thesaurus:P90>
+        <Thesaurus:P90>MG</Thesaurus:P90>
+        <Thesaurus:P90>Mammography</Thesaurus:P90>
+        <Thesaurus:P90>mammography</Thesaurus:P90>
+        <Thesaurus:P97>A type of radiography used specifically to examine breast tissue. The procedure utilizes a low-dose of x-rays or radiation to generate an image. A mammography exam or mammogram, is used as a screening tool to detect early breast cancer in women experiencing no symptoms and to detect and diagnose breast disease.</Thesaurus:P97>
+        <rdfs:label>Mammography</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325"/>
+        <owl:annotatedTarget>A type of radiography used specifically to examine breast tissue. The procedure utilizes a low-dose of x-rays or radiation to generate an image.</owl:annotatedTarget>
+        <Thesaurus:P378>CDISC</Thesaurus:P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325"/>
+        <owl:annotatedTarget>The use of film or a computer to create a picture of the breast.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI-GLOSS</Thesaurus:P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MAMMOGRAPHY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>CDISC</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MG</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>caDSR</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Mammography</owl:annotatedTarget>
+        <Thesaurus:P383>DN</Thesaurus:P383>
+        <Thesaurus:P384>CTRP</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Mammography</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Mammography</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>caDSR</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>mammography</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI-GLOSS</Thesaurus:P384>
+        <Thesaurus:P385>CDR0000045996</Thesaurus:P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+        <owl:annotatedTarget>A type of radiography used specifically to examine breast tissue. The procedure utilizes a low-dose of x-rays or radiation to generate an image. A mammography exam or mammogram, is used as a screening tool to detect early breast cancer in women experiencing no symptoms and to detect and diagnose breast disease.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI</Thesaurus:P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <Thesaurus:A23 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25162"/>
+        <Thesaurus:A26 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C142099"/>
+        <Thesaurus:A26 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17649"/>
+        <Thesaurus:A26 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998"/>
+        <Thesaurus:A26 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43224"/>
+        <Thesaurus:A26 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43234"/>
+        <Thesaurus:A29 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3476"/>
+        <Thesaurus:A29 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62505"/>
+        <Thesaurus:A29 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C8493"/>
+        <Thesaurus:A29 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C8494"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C122805"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17649"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C26900"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34752"/>
+        <Thesaurus:A34 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C85178"/>
+        <Thesaurus:A36 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998"/>
+        <Thesaurus:A36 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43224"/>
+        <Thesaurus:A36 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48660"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C114357"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17649"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17998"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C185318"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C26714"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C26746"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C26915"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C27191"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2892"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2969"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2986"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2993"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3071"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3138"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3201"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3243"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3346"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34415"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3447"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34649"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34666"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34700"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3476"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C34854"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C3718"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43234"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84641"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84652"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84668"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84725"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84892"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C8494"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C8495"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C87069"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C87175"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C88541"/>
+        <Thesaurus:A39 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C98889"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156952"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156953"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C156954"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C173201"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C174018"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C174239"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C174251"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C177384"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C177391"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C178102"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C178117"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C186315"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C186342"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C89506"/>
+        <Thesaurus:A8 rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C90259"/>
+        <Thesaurus:NHC0>C18772</Thesaurus:NHC0>
+        <Thesaurus:P106>Finding</Thesaurus:P106>
+        <Thesaurus:P108>Personal Medical History</Thesaurus:P108>
+        <Thesaurus:P207>C0262926</Thesaurus:P207>
+        <Thesaurus:P322>CPTAC</Thesaurus:P322>
+        <Thesaurus:P322>NICHD</Thesaurus:P322>
+        <Thesaurus:P322>PCDC</Thesaurus:P322>
+        <Thesaurus:P325>A collection of information about a person&apos;s health. It may include information about allergies, illnesses and surgeries, and dates and results of physical exams, tests, screenings, and immunizations. It may also include information about medicines taken and about diet and exercise.</Thesaurus:P325>
+        <Thesaurus:P366>Personal_Medical_History</Thesaurus:P366>
+        <Thesaurus:P90>General Medical History</Thesaurus:P90>
+        <Thesaurus:P90>History</Thesaurus:P90>
+        <Thesaurus:P90>MEDICAL_HISTORY</Thesaurus:P90>
+        <Thesaurus:P90>Medical History</Thesaurus:P90>
+        <Thesaurus:P90>PMH</Thesaurus:P90>
+        <Thesaurus:P90>Past Medical History</Thesaurus:P90>
+        <Thesaurus:P90>Personal History</Thesaurus:P90>
+        <Thesaurus:P90>Personal Medical History</Thesaurus:P90>
+        <Thesaurus:P90>personal health record</Thesaurus:P90>
+        <Thesaurus:P90>personal history</Thesaurus:P90>
+        <Thesaurus:P90>personal medical history</Thesaurus:P90>
+        <Thesaurus:P97>A record of a patient&apos;s background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies.</Thesaurus:P97>
+        <rdfs:label>Personal Medical History</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P325"/>
+        <owl:annotatedTarget>A collection of information about a person&apos;s health. It may include information about allergies, illnesses and surgeries, and dates and results of physical exams, tests, screenings, and immunizations. It may also include information about medicines taken and about diet and exercise.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI-GLOSS</Thesaurus:P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>General Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>CPTAC</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MEDICAL_HISTORY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>PCDC</Thesaurus:P384>
+        <Thesaurus:P386>ALL</Thesaurus:P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MEDICAL_HISTORY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>PCDC</Thesaurus:P384>
+        <Thesaurus:P386>AML</Thesaurus:P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MEDICAL_HISTORY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>PCDC</Thesaurus:P384>
+        <Thesaurus:P386>EWS</Thesaurus:P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MEDICAL_HISTORY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>PCDC</Thesaurus:P384>
+        <Thesaurus:P386>GCT</Thesaurus:P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>MEDICAL_HISTORY</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>PCDC</Thesaurus:P384>
+        <Thesaurus:P386>HL</Thesaurus:P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>PMH</owl:annotatedTarget>
+        <Thesaurus:P383>AB</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Past Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Personal History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Personal Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>CPTAC</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Personal Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Personal Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NICHD</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Personal Medical History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>caDSR</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>personal health record</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI-GLOSS</Thesaurus:P384>
+        <Thesaurus:P385>CDR0000642020</Thesaurus:P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>personal history</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI-GLOSS</Thesaurus:P384>
+        <Thesaurus:P385>CDR0000642021</Thesaurus:P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>personal medical history</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI-GLOSS</Thesaurus:P384>
+        <Thesaurus:P385>CDR0000642019</Thesaurus:P385>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+        <owl:annotatedTarget>A record of a patient&apos;s background regarding health and the occurrence of disease events of the individual. In addition, personal medical history may be a variable in epidemiologic studies.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI</Thesaurus:P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197">
+        <Thesaurus:NHC0>C25197</Thesaurus:NHC0>
+        <Thesaurus:P106>Idea or Concept</Thesaurus:P106>
+        <Thesaurus:P108>Recommendation</Thesaurus:P108>
+        <Thesaurus:P207>C0034866</Thesaurus:P207>
+        <Thesaurus:P366>Recommendation</Thesaurus:P366>
+        <Thesaurus:P90>Recommendation</Thesaurus:P90>
+        <Thesaurus:P90>Recommended</Thesaurus:P90>
+        <Thesaurus:P97>Advice telling someone what the best thing to do is.</Thesaurus:P97>
+        <rdfs:label>Recommendation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Recommendation</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Recommended</owl:annotatedTarget>
+        <Thesaurus:P383>AD</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+        <owl:annotatedTarget>Advice telling someone what the best thing to do is.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI</Thesaurus:P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625 -->
+
+    <owl:Class rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625">
+        <Thesaurus:NHC0>C54625</Thesaurus:NHC0>
+        <Thesaurus:P106>Conceptual Entity</Thesaurus:P106>
+        <Thesaurus:P108>History</Thesaurus:P108>
+        <Thesaurus:P207>C2004062</Thesaurus:P207>
+        <Thesaurus:P366>History</Thesaurus:P366>
+        <Thesaurus:P90>Historical</Thesaurus:P90>
+        <Thesaurus:P90>History</Thesaurus:P90>
+        <Thesaurus:P97>The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events.</Thesaurus:P97>
+        <rdfs:label>History</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>Historical</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>History</owl:annotatedTarget>
+        <Thesaurus:P383>PT</Thesaurus:P383>
+        <Thesaurus:P384>NCI</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P90"/>
+        <owl:annotatedTarget>History</owl:annotatedTarget>
+        <Thesaurus:P383>SY</Thesaurus:P383>
+        <Thesaurus:P384>caDSR</Thesaurus:P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+        <owl:annotatedProperty rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#P97"/>
+        <owl:annotatedTarget>The aggregate of past events; the continuum of events occurring in succession leading from the past to the present; a record or narrative description of past events.</owl:annotatedTarget>
+        <Thesaurus:P378>NCI</Thesaurus:P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_High -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_high"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:label>ACS model high risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_medium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:comment>Subclass of woman that indicates the woman has an intermediate risk to suffer breast cancer</rdfs:comment>
+        <rdfs:label xml:lang="en">ACS model medium risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Age -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age">
+        <rdfs:label>Age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Answer_value -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Answer_value">
+        <rdfs:label>Answer value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Breast_disease_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Breast_disease_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Breast disease history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Family_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Family_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Family history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_High -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_high"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:label>Gail model high risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_Medium -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_Medium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_medium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:label>Gail model medium risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Genetic mutation history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Guideline -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Guideline">
+        <rdfs:label>Guideline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Height -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Height">
+        <rdfs:label>Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Hormonal history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_High -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_High">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_high"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:label>IBIS model high risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_Medium -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_Medium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_medium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdfs:label>IBIS model medium risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Imaging -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Imaging">
+        <rdfs:label>Imaging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Imaging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Model -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Model">
+        <rdfs:label>Model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Ovarian_disease_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Ovarian_disease_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Ovarian disease history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Periodicity -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Periodicity">
+        <rdfs:comment>Frequency with which mammography is recommended.</rdfs:comment>
+        <rdfs:label>Periodicity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Personal_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Personal_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Personal history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Question -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Question">
+        <rdfs:label>Question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Race -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Race">
+        <rdfs:label>Race</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history">
+        <rdfs:subClassOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C18772"/>
+        <rdfs:label>Radiotherapy chest history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Rec_interval -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval">
+        <rdfs:label>Rec. interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength">
+        <rdfs:comment>Type of recommendation to be made according to the GRADE guide (Grades of recommendation, evaluation and development).</rdfs:comment>
+        <rdfs:label>Recommendation strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Risk -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Risk">
+        <rdfs:label>Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Risk_level -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Risk_level">
+        <rdfs:label>Risk level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Weight -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Weight">
+        <rdfs:label>Weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_guideline -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_guideline">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Guideline"/>
+        <breast_cancer_recommendation:forRiskLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+        <breast_cancer_recommendation:gives rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#greater_than_55_Age_range_recommendation"/>
+        <breast_cancer_recommendation:gives rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#40_to_44_Age_range_recommendation"/>
+        <breast_cancer_recommendation:gives rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#44_to_54_Age_range_recommendation"/>
+        <rdfs:label>ACS guideline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_model -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_model">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+        <breast_cancer_recommendation:predicts rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_high"/>
+        <breast_cancer_recommendation:predicts rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_medium"/>
+        <rdfs:label>ACS model</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_model_high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_high">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+        <rdfs:label>ACS model high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#ACS_model_medium -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#ACS_model_medium">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+        <rdfs:label>ACS model medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_44 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_44">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <breast_cancer_recommendation:intervalOfMedium rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#40_to_44_Age_range_recommendation"/>
+        <breast_cancer_recommendation:intervalMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</breast_cancer_recommendation:intervalMax>
+        <breast_cancer_recommendation:intervalMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</breast_cancer_recommendation:intervalMin>
+        <rdfs:label>Age_Range_40_to_44</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <breast_cancer_recommendation:intervalOfHigh rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#high_40_to_50_age_recommendation"/>
+        <breast_cancer_recommendation:intervalMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</breast_cancer_recommendation:intervalMax>
+        <breast_cancer_recommendation:intervalMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</breast_cancer_recommendation:intervalMin>
+        <rdfs:label>Age_gt_or_eq_30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Age_Range_45_to_54 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_45_to_54">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <breast_cancer_recommendation:intervalOfMedium rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#44_to_54_Age_range_recommendation"/>
+        <breast_cancer_recommendation:intervalMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</breast_cancer_recommendation:intervalMax>
+        <breast_cancer_recommendation:intervalMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</breast_cancer_recommendation:intervalMin>
+        <rdfs:label>Age_Range_45_to_54</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Age_gt_or_eq_55 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age_gt_or_eq_55">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+        <breast_cancer_recommendation:intervalOfMedium rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#greater_than_55_Age_range_recommendation"/>
+        <breast_cancer_recommendation:intervalMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</breast_cancer_recommendation:intervalMax>
+        <breast_cancer_recommendation:intervalMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</breast_cancer_recommendation:intervalMin>
+        <rdfs:label>Age_gt_or_eq_55</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Annual -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Annual">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Periodicity"/>
+        <rdfs:comment>Frequency with which mammography is recommended, once a year.</rdfs:comment>
+        <rdfs:label>Annual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Annual_or_Biannual -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Annual_or_Biannual">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Periodicity"/>
+        <rdfs:comment>Frequency with which mammography is recommended, once or twice a year.</rdfs:comment>
+        <rdfs:label>Annual or Biannual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Gail_model -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Gail_model">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+        <breast_cancer_recommendation:predicts rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_high"/>
+        <breast_cancer_recommendation:predicts rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_medium"/>
+        <rdfs:label>Gail model</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Gail_model_high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_high">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+        <rdfs:label>Gail model high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Gail_model_medium -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Gail_model_medium">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+        <rdfs:label>Gail model medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#HRisk_guideline -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#HRisk_guideline">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Guideline"/>
+        <breast_cancer_recommendation:forRiskLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+        <breast_cancer_recommendation:gives rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#high_40_to_50_age_recommendation"/>
+        <rdfs:label>HRisk guideline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#High -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#High">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk_level"/>
+        <rdfs:label>High</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA1_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA1_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>BRCA1+</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen BRCA1 value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA2_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA2_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>BRCA2+</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen BRCA2 value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA1_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA1_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>BRCA1+</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen mother BRCA1 value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA2_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA2_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>BRCA2+</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen mother BRCA2 value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA1_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_BRCA2_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_test_normal_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_unknown_value"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Gen BRCA?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS BRCA gen mother question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_test_normal_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_test_normal_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Probado, Normal</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen mother test normal value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_unknown_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_unknown_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Desconocido</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen mother unknown value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA1_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_BRCA2_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_test_normal_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_unknown_value"/>
+        <breast_cancer_recommendation:questionText>Gen NRCA: ¿La mujer tiene una mutación en el gen BRCA1 o BRCA2?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Genetic</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS BRCA gen question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_test_normal_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_test_normal_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Probado, Normal</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen test normal value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_unknown_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_unknown_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Desconocido</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS BRCA gen unknown value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_age_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_age_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>Edad actual:</breast_cancer_recommendation:questionText>
+        <Thesaurus:P384></Thesaurus:P384>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Personal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS age question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ahkenazi ancestry no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ahkenazi ancestry yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ashkenazi_ancestry_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ashkenazi_ancestry_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_yes_value"/>
+        <breast_cancer_recommendation:questionText>¿Herencia Ashkenazi?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS ahkenazi ancestry question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS bilateral bc mother no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_yes_value"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Bilateral?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS bilateral bc mother question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS bilateral bc mother yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_carcinoma_lob_is_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_carcinoma_lob_is_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Carcinoma lobulillar in situ (CLIS)</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast biopsy carcinoma lob is value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_atipica_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_atipica_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Hiperplasia atípica</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast biopsy hiperplasia atipica value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_no_atipia_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_no_atipia_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Hiperplasia (no atipia)</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast biopsy hiperplasia no atipia value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_carcinoma_lob_is_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_atipica_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_no_atipia_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_unknown_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_without_value"/>
+        <breast_cancer_recommendation:questionText>Biopsia de mama: ¿Se ha realizado una biopsia de mama la mujer?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Breast disease</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS breast biopsy question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_unknown_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_unknown_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Biopsia previa, resultado desconocido</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast biopsy unknown value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_without_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_without_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sin biopsia previa / sin enfermedad proliferativa</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast biopsy without value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast cancer mother no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_yes_value"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Cáncer de mama?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS breast cancer mother question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast cancer mother yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_average_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_average_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Promedio</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast density average value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_extrem_dense_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_extrem_dense_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>extremadamente denso</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast density extrem dense value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_fatty_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_fatty_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Graso</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast density fatty value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_heterog_dense_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_heterog_dense_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>heterogéneamente denso</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS breast density heterog dense value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_average_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_extrem_dense_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_fatty_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_heterog_dense_value"/>
+        <breast_cancer_recommendation:questionText>Densidad mamaria, si se conoce</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Personal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS breast density question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_first_child_birth_age_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_first_child_birth_age_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>¿Edad de la mujer cuando dio a luz a su PRIMER hijo vivo?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Hormonal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS first child birth age question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has childs no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_unknown_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_yes_value"/>
+        <breast_cancer_recommendation:questionText>¿La mujer ha dado a luz a uno o más hijos?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Hormonal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS has childs question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_unknown_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_unknown_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Desconocido</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has childs unknown value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has childs yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has menopause no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_now_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_now_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>En la monopausia ahora</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has menopause now value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_now_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_unknown_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_yes_value"/>
+        <breast_cancer_recommendation:questionText>¿La mujer ha pasado por la menopausia?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Hormonal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS has menopause question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_unknown_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_unknown_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>no sé</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has menopause unknown value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS has menopause yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_height_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_height_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>Altura:</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Personal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS height question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_less_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_less_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Dejó de usarse hace menos de 5 años</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS horm therapy 5 years less value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_more_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_more_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Dejó de usarse hace 5 años o más</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS horm therapy 5 years more value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_never_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_never_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Nunca</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS horm therapy never value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_now_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_now_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Usuario actual</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS horm therapy now value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_hormonal_therapy_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_hormonal_therapy_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_less_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_more_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_never_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_now_value"/>
+        <breast_cancer_recommendation:questionText>¿Uso de la terapia de reemplazo hormonal (TRH)?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Hormonal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS hormonal therapy question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_menarche_age_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_menarche_age_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>¿Cuál era la edad de la mujer en el momento de su primer período menstrual?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Hormonal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS menarche age question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_model -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_model">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_age_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ashkenazi_ancestry_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_first_child_birth_age_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_height_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_hormonal_therapy_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_menarche_age_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_bc_start_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_mother_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_question"/>
+        <breast_cancer_recommendation:hasModelQuestion rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_weight_question"/>
+        <rdfs:label>IBIS model</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_high">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+        <rdfs:label>IBIS model high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_medium -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_model_medium">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+        <breast_cancer_recommendation:hasLevel rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+        <rdfs:label>IBIS model medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_bc_start_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_bc_start_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Edad de la madre al inicio?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS mother age bc start question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Edad actual o al fallecer?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS mother age question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ovarial cancer mother no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ovarial cancer mother yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_mother_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_mother_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_yes_value"/>
+        <breast_cancer_recommendation:questionText>Madre: ¿Cáncer de ovarios?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Family</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS ovarial cancer mother question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_no_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_no_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>No</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ovarian cancer no value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_no_value"/>
+        <breast_cancer_recommendation:hasAnswer rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_yes_value"/>
+        <breast_cancer_recommendation:questionText>Cáncer de ovario: ¿La mujer ha tenido cáncer de OVARIO?</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Ovarian disease</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS ovarian cancer question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_yes_value -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_yes_value">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+        <breast_cancer_recommendation:answerText>Sí</breast_cancer_recommendation:answerText>
+        <rdfs:label>IBIS ovarian cancer yes value</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#IBIS_weight_question -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#IBIS_weight_question">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+        <breast_cancer_recommendation:questionText>Peso:</breast_cancer_recommendation:questionText>
+        <breast_cancer_recommendation:order rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</breast_cancer_recommendation:order>
+        <breast_cancer_recommendation:riskFactor>Personal</breast_cancer_recommendation:riskFactor>
+        <rdfs:label>IBIS weight question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Medium">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Risk_level"/>
+        <rdfs:label>Medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Qualified_Recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Qualified_Recommendation">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength"/>
+        <rdfs:comment xml:lang="en">They suggest that there is clear evidence of benefit from screening, but less certainty about the balance of benefits and harms.</rdfs:comment>
+        <rdfs:label xml:lang="en">Qualified Recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Screening_Mammography -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Screening_Mammography">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16818"/>
+        <rdfs:comment>Screening refers to tests and exams used to find a disease in people who do not have any symptoms. Mammograms are low-dose X-rays of the breast. The mammography screening can help detect breast cancer at an early stage, when treatment is most likely to be successful.</rdfs:comment>
+        <rdfs:label>Screening Mammography</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Strong_Recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Strong_Recommendation">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength"/>
+        <rdfs:comment xml:lang="en">Consensus that the benefits of adherence to this intervention outweigh the undesirable effects that may result from screening</rdfs:comment>
+        <rdfs:label xml:lang="en">Strong Recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman1">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_Medium"/>
+        <breast_cancer_recommendation:hasAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age43"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman1"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman1"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman1"/>
+        <breast_cancer_recommendation:hasRace rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#african_american"/>
+        <rdfs:label xml:lang="en">Woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman2">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_Medium"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_High"/>
+        <breast_cancer_recommendation:hasAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age56"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman2"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman2"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman2"/>
+        <breast_cancer_recommendation:hasRace rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#white"/>
+        <rdfs:label xml:lang="en">Woman 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman3 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman3">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#IBIS_Model_Medium"/>
+        <breast_cancer_recommendation:hasAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age44"/>
+        <rdfs:label xml:lang="en">Woman 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman4">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_High"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_High"/>
+        <breast_cancer_recommendation:hasAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age56"/>
+        <breast_cancer_recommendation:hasRace rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#latin_hispanic"/>
+        <rdfs:label xml:lang="en">Woman 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman5">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Gail_Model_Medium"/>
+        <breast_cancer_recommendation:hasAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age46"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman5"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman5"/>
+        <breast_cancer_recommendation:hasRace rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#white"/>
+        <rdfs:label xml:lang="en">Woman 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#Woman6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Woman6">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#ACS_Model_Medium"/>
+        <breast_cancer_recommendation:hasHistory rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman6"/>
+        <breast_cancer_recommendation:hasRace rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#white"/>
+        <rdfs:label xml:lang="en">Woman 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#african_american -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#african_american">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>african american</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age11 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age11">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</breast_cancer_recommendation:age>
+        <rdfs:label>age11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age13 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age13">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</breast_cancer_recommendation:age>
+        <rdfs:label>age13</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age28 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age28">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</breast_cancer_recommendation:age>
+        <rdfs:label>age28</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age30 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age30">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</breast_cancer_recommendation:age>
+        <rdfs:label>age30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age43 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age43">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_44"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</breast_cancer_recommendation:age>
+        <rdfs:label>age43</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age44 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age44">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_44"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</breast_cancer_recommendation:age>
+        <rdfs:label>age44</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age46 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age46">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_45_to_54"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</breast_cancer_recommendation:age>
+        <rdfs:label>age46</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age54 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age54">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_45_to_54"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</breast_cancer_recommendation:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#age56 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#age56">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:hasRange rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_gt_or_eq_55"/>
+        <breast_cancer_recommendation:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</breast_cancer_recommendation:age>
+        <rdfs:label>age56</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#alaskan_native -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#alaskan_native">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>alaskan native</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#american_indian -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#american_indian">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>american indian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#asian_american -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#asian_american">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>asian american</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman1">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+        <rdfs:label>genetic mutation Woman1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman2">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+        <rdfs:label>genetic mutation Woman2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman5">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+        <rdfs:label>genetic mutation Woman5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#genetic_mutation_Woman6">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+        <rdfs:label>genetic mutation Woman6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#greater_than_55_Age_range_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#greater_than_55_Age_range_recommendation">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <breast_cancer_recommendation:forInterval rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_gt_or_eq_55"/>
+        <breast_cancer_recommendation:hasImaging rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Screening_Mammography"/>
+        <breast_cancer_recommendation:hasPeriodicity rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Annual_or_Biannual"/>
+        <breast_cancer_recommendation:hasRecStrength rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Qualified_Recommendation"/>
+        <rdfs:label>ACS-Guide-&gt;= 55 Age range recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#high_40_to_50_age_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#high_40_to_50_age_recommendation">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <breast_cancer_recommendation:forInterval rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_50"/>
+        <breast_cancer_recommendation:hasImaging rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance"/>
+        <breast_cancer_recommendation:hasPeriodicity rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Annual"/>
+        <breast_cancer_recommendation:hasRecStrength rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Strong_Recommendation"/>
+        <rdfs:label>High-Guide-&gt;=30 Age range recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman1">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <breast_cancer_recommendation:hasFirstChildBirthAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age28"/>
+        <breast_cancer_recommendation:hasMenarcheAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age11"/>
+        <breast_cancer_recommendation:numberOfChilds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</breast_cancer_recommendation:numberOfChilds>
+        <breast_cancer_recommendation:yearsNumberAnticonceptive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</breast_cancer_recommendation:yearsNumberAnticonceptive>
+        <rdfs:label>hormonal Woman1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#hormonal_Woman2">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+        <breast_cancer_recommendation:hasFirstChildBirthAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age30"/>
+        <breast_cancer_recommendation:hasMenarcheAge rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#age13"/>
+        <breast_cancer_recommendation:numberOfChilds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</breast_cancer_recommendation:numberOfChilds>
+        <rdfs:label>hormonal Woman2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#latin_hispanic -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#latin_hispanic">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>latin hispanic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman1">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history"/>
+        <rdfs:label>radiotherapy chest Woman1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman2">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history"/>
+        <rdfs:label>radiotherapy chest Woman2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman5 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman5">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history"/>
+        <rdfs:label>radiotherapy chest Woman5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman6 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#radiotherapy_chest_Woman6">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history"/>
+        <rdfs:label>radiotherapy chest Woman6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#white -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#white">
+        <rdf:type rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+        <rdfs:label>white</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#40_to_44_Age_range_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#40_to_44_Age_range_recommendation">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <breast_cancer_recommendation:forInterval rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_40_to_44"/>
+        <breast_cancer_recommendation:hasImaging rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Screening_Mammography"/>
+        <breast_cancer_recommendation:hasPeriodicity rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Annual"/>
+        <breast_cancer_recommendation:hasRecStrength rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Qualified_Recommendation"/>
+        <rdfs:label xml:lang="en">ACS-Guide-40 to 44 Age range recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/breast_cancer_recommendation#44_to_54_Age_range_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/breast_cancer_recommendation#44_to_54_Age_range_recommendation">
+        <rdf:type rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+        <breast_cancer_recommendation:forInterval rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Age_Range_45_to_54"/>
+        <breast_cancer_recommendation:hasImaging rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Screening_Mammography"/>
+        <breast_cancer_recommendation:hasPeriodicity rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Annual"/>
+        <breast_cancer_recommendation:hasRecStrength rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Strong_Recommendation"/>
+        <rdfs:label xml:lang="en">ACS-Guide-45 to 54 Age range recommendation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Magnetic_resonance">
+        <rdfs:label>Magnetic resonance</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasLevel"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#High"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAgeHigh"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasRisk"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasLevel"/>
+                        <owl:hasValue rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#Medium"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/breast_cancer_recommendation#hasAgeMedium"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14284"/>
+            <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25197"/>
+            <rdf:Description rdf:about="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54625"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Age"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Answer_value"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Guideline"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Height"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Imaging"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Model"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Periodicity"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Question"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Race"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Rec_interval"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Recommendation_Strength"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Risk"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Risk_level"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Weight"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Breast_disease_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Family_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Genetic_mutation_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Hormonal_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Ovarian_disease_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Personal_history"/>
+            <rdf:Description rdf:about="http://purl.org/ontology/breast_cancer_recommendation#Radiotherapy_chest_history"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

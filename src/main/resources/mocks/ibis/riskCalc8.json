@@ -1,0 +1,7 @@
+{
+  "risk_model_calculator_type": "IBIS_MOCKED",
+  "risk_all_life": "16.9",
+  "risk_ten_years": "13.8",
+  "risk_level": "MEDIUM",
+  "risk_model": "IBIS"
+}

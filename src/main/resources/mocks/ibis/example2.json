@@ -1,0 +1,21 @@
+{
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_age_question": "53",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_weight_question": "92",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_height_question": "1.83",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_density_fatty_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_menarche_age_question": "12",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_childs_yes_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_first_child_birth_age_question": "18",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_has_menopause_now_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_hormonal_therapy_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_horm_therapy_5_years_more_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_unknown_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_biopsy_hiperplasia_atipica_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ashkenazi_ancestry_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ahkenazi_ancestry_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_question": "96",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_breast_cancer_mother_yes_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_mother_age_bc_start_question": "51",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_bilateral_bc_mother_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarian_cancer_mother_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_ovarial_cancer_mother_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_question": "http://purl.org/ontology/breast_cancer_recommendation#IBIS_BRCA_gen_mother_unknown_value"
+}

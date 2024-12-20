@@ -1,0 +1,6 @@
+{
+  "http://purl.org/ontology/breast_cancer_recommendation#UY_chest_radiotherapy_question": "http://purl.org/ontology/breast_cancer_recommendation#UY_chest_radiotherapy_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#UY_hereditary_risk_question": "http://purl.org/ontology/breast_cancer_recommendation#UY_hereditary_risk_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#UY_hiperplasia_atipia_question": "http://purl.org/ontology/breast_cancer_recommendation#UY_hiperplasia_atipia_no_value",
+  "http://purl.org/ontology/breast_cancer_recommendation#UY_age_question": "40"
+}

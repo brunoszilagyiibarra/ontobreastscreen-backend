@@ -44,10 +44,6 @@ public class FormAdapter {
 
         Form form = ontoFormsClient.getWomanForm();
 
-        //TODO: Se remueve todo ya que no hay nada que se pueda re-aprocechar con la estructura actual de la ontología.
-        form.removeSubForms();
-        form.removeAllFields();
-
         var riskFactorOrderByUris = getRiskFactorOrderValues(ontoModel);
 
         questionsByClassification.forEach((riskFactorUri, riskFactorQuestions) -> {

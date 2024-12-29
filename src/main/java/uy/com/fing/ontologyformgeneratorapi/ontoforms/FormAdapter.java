@@ -13,10 +13,7 @@ import uy.com.fing.ontologyformgeneratorapi.ontology.BCRClassesEnum;
 import uy.com.fing.ontologyformgeneratorapi.ontology.BCRPropsEnum;
 import uy.com.fing.ontologyformgeneratorapi.ontology.OntologyRepository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static uy.com.fing.ontologyformgeneratorapi.ontology.BCRClassesEnum.RISK_FACTOR_CLASS;
@@ -42,28 +39,42 @@ public class FormAdapter {
                 .peek(q -> log.info("Se computa la pregunta {}", q))
                 .collect(Collectors.groupingBy(Question::riskFactorUri));
 
-        Form form = ontoFormsClient.getWomanForm();
+        Form womanForm = ontoFormsClient.getWomanForm();
+
+        //Paso 1: Eliminamos el anidamiento History - Personal History , se dejan directamente las sub-formularios.
+        womanForm.setSubForms(womanForm.getSubForms().get(0).getSubForms().get(0).getSubForms());
 
         var riskFactorOrderByUris = getRiskFactorOrderValues(ontoModel);
 
-        questionsByClassification.forEach((riskFactorUri, riskFactorQuestions) -> {
+        womanForm.getSubForms().forEach(form -> {
+            form.getFields().clear(); //Se puede hacer por configuración en el administrador, eso sería lo mejor, pero por tiempo lo hago acá.
 
-            String riskFactorLabel = LanguageLabelUtils.getLabelInLanguageOrDefault(ontoModel.getIndividual(riskFactorUri), language);
+            String historySubClass = form.getClassUri().replace("http://purl.org/ontology/breast_cancer_recommendation#", "");
+            String riskFactorIndUri = "http://purl.org/ontology/breast_cancer_recommendation#";
 
-            Form formForRiskFactor = Form.builder()
-                    .classUri(riskFactorUri)
-                    .sectionName(riskFactorLabel)
-                    .fields(new ArrayList<>())
-                    .sectionOrder(riskFactorOrderByUris.get(riskFactorUri))
-                    .subForms(new ArrayList<>())
-                    .build();
+            //Se hace una correspondencia con metamodelado.
+            switch (historySubClass) {
+                case "Genetic_mutation_history" -> riskFactorIndUri +="Genetic"; //tiene nombre incorrecto
+                case "Radiotherapy_chest_history" -> riskFactorIndUri += "Radiotherapy"; //tiene nombre incorrecto
+                default -> riskFactorIndUri += historySubClass.replace("_history", "");
+            }
 
-            addFormFields(formForRiskFactor, riskFactorQuestions);
+            var riskFactorLabel = LanguageLabelUtils.getLabelInLanguageOrDefault(ontoModel.getIndividual(riskFactorIndUri), language);
+            form.setSectionName(riskFactorLabel);
+            form.setSectionOrder(riskFactorOrderByUris.get(riskFactorIndUri));
 
-            form.addSubSection(formForRiskFactor);
+            List<Question> extraQuestions = questionsByClassification.get(riskFactorIndUri);
+            if(extraQuestions != null) {
+                addFormFields(form, extraQuestions);
+            }
         });
 
-        return form;
+        List<Form> filteredAndOrderedSubForms = womanForm.getSubForms().stream()
+                .filter(s -> !s.getFields().isEmpty()).sorted(Comparator.comparingInt(Form::getSectionOrder)).toList();
+
+        womanForm.setSubForms(filteredAndOrderedSubForms);
+
+        return womanForm;
     }
 
     private static Map<String, Integer> getRiskFactorOrderValues(OntModel ontoModel) {
@@ -143,6 +154,10 @@ public class FormAdapter {
     }
 
     private void addFormFields(Form subForm, List<Question> questions) {
+        if(subForm.getFields() == null) {
+            subForm.setFields(new ArrayList<>());
+        }
+
         for (Question question : questions) {
 
             Form.FormField field;

@@ -22,6 +22,7 @@ public class Form {
     private List<Form> subForms;
     private int sectionOrder;
 
+
     public void addSubSection(Form subSection) {
         subForms.add(subSection);
         subForms.sort(Comparator.comparingInt(Form::getSectionOrder));
@@ -58,7 +59,7 @@ public class Form {
     public static abstract class FormField {
         private String label;
         private String uri;
-        private Integer order;
+        private int order;
         private Boolean editable;
 
         public abstract String getType();
